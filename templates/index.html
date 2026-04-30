@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrinmayee Gokhale — AI & Data Science Engineer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+    <div class="nav-logo">MG<span class="dot">.</span></div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="/resume" class="nav-resume-btn">Resume ↓</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for Internships · 2025
+        </div>
+        <h1 class="hero-name">
+            <span class="line-reveal">Mrinmayee</span>
+            <span class="line-reveal delay-1">Gokhale<span class="name-accent">.</span></span>
+        </h1>
+        <p class="hero-role line-reveal delay-2">
+            AI &amp; Data Science Engineer
+        </p>
+        <p class="hero-tagline line-reveal delay-3">
+            Building intelligent systems at the intersection of<br>
+            <span class="highlight">Healthcare AI</span> · <span class="highlight">Deep Learning</span> · <span class="highlight">Data Engineering</span>
+        </p>
+        <div class="hero-cta line-reveal delay-4">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="https://github.com/Mrinmayee-22" target="_blank" class="btn-ghost">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/mrinmayee-gokhale-1b03b72b2/" target="_blank" class="btn-ghost">LinkedIn ↗</a>
+        </div>
+        <div class="hero-stats line-reveal delay-5">
+            <div class="stat"><span class="stat-num">9.05</span><span class="stat-label">CGPA</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">AI/ML Projects</span></div>
+            <div class="stat-div"></div>
+            <div class="stat"><span class="stat-num">1</span><span class="stat-label">Research Paper</span></div>
+        </div>
+    </div>
+    <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="section-label">01 / About</div>
+        <div class="about-grid">
+            <div class="about-left">
+                <h2 class="section-heading">Engineering intelligence,<br><em>one model at a time.</em></h2>
+                <div class="about-card">
+                    <div class="about-card-icon">🎓</div>
+                    <div>
+                        <strong>MIT World Peace University, Pune</strong>
+                        <p>B.Tech CSE — Artificial Intelligence &amp; Data Science</p>
+                        <p class="muted">2023 – 2027 · CGPA: 9.05 · Zero backlogs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <p class="about-bio">
+                    I'm a third-year AI &amp; Data Science engineering student at MIT-WPU with a deep focus on
+                    building end-to-end machine learning systems — from raw data pipelines to deployed models.
+                </p>
+                <p class="about-bio">
+                    My work spans <strong>healthcare AI</strong> (diabetic retinopathy classification, medical NLP),
+                    <strong>applied ML</strong> (real estate prediction, crop advisory), and <strong>systems engineering</strong>
+                    (real-time Java monitoring, traffic optimization with RL). I've also authored a
+                    <strong>research paper</strong> on automated exploratory data analysis.
+                </p>
+                <p class="about-bio">
+                    Beyond code: HR Associate at <strong>Society of Women Engineers (SWE)</strong>,
+                    member of CSI, and a Rural Immersion Program participant.
+                </p>
+                <div class="about-pills">
+                    <span>Healthcare AI</span><span>NLP & Transformers</span><span>Deep Learning</span>
+                    <span>ML Pipelines</span><span>Systems Design</span><span>Data Engineering</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="section-label">02 / Projects</div>
+        <h2 class="section-heading">Selected Work</h2>
+        <p class="section-sub">End-to-end AI systems, research prototypes, and production-grade pipelines.</p>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card featured">
+                <div class="project-tag">Healthcare AI · Featured</div>
+                <h3>Diabetic Retinopathy Classification</h3>
+                <p class="project-desc">
+                    A deep learning diagnostic system that classifies retinal fundus images across five severity stages of diabetic retinopathy, enabling early-stage detection at scale.
+                </p>
+                <ul class="project-bullets">
+                    <li>Designed and trained a custom CNN architecture on the APTOS/Kaggle retinal image dataset with multi-class severity grading</li>
+                    <li>Applied advanced augmentation (CLAHE, zoom, flip, rotation) to address class imbalance and improve generalization</li>
+                    <li>Achieved high classification accuracy with Quadratic Weighted Kappa as the primary evaluation metric</li>
+                    <li>Implemented Grad-CAM visualization to produce clinically interpretable heatmaps over lesion regions</li>
+                    <li>Designed for deployment as a screening aid in low-resource healthcare environments</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>TensorFlow/Keras</span><span>CNN</span><span>OpenCV</span><span>Grad-CAM</span><span>Medical Imaging</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card featured">
+                <div class="project-tag">NLP · Healthcare</div>
+                <h3>MedTermQuest — Medical NLP System</h3>
+                <p class="project-desc">
+                    An NLP-powered information extraction system that identifies, disambiguates, and retrieves medical terminology from clinical text using transformer-based models.
+                </p>
+                <ul class="project-bullets">
+                    <li>Built a Named Entity Recognition (NER) pipeline over clinical corpora to extract symptoms, diagnoses, drugs, and procedures</li>
+                    <li>Fine-tuned BioBERT/ClinicalBERT for domain-specific medical entity classification with high precision/recall</li>
+                    <li>Implemented semantic search for querying medical concepts using vector embeddings and cosine similarity</li>
+                    <li>Designed an information retrieval layer to map extracted terms to standardized medical ontologies (SNOMED/ICD-10)</li>
+                    <li>Enables downstream clinical decision support and automated patient record analysis</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>BioBERT</span><span>spaCy</span><span>HuggingFace</span><span>NER</span><span>NLP</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-tag">Data Science · Research</div>
+                <h3>Automated EDA System</h3>
+                <p class="project-desc">
+                    A fully automated exploratory data analysis pipeline that generates structured analytical reports from raw tabular datasets — backed by a published research paper.
+                </p>
+                <ul class="project-bullets">
+                    <li>Built end-to-end pipeline covering missing value detection, distribution analysis, correlation mapping, and outlier identification</li>
+                    <li>Auto-generates visual dashboards (histograms, heatmaps, box plots) with zero manual intervention</li>
+                    <li>Produces structured markdown/PDF reports with statistical summaries and data quality scores</li>
+                    <li>Research paper documenting methodology, benchmarks, and reproducibility submitted/published</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>Pandas</span><span>Seaborn</span><span>Plotly</span><span>Scipy</span><span>Automation</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-tag">Smart Systems · RL</div>
+                <h3>Traffic Flow Optimization Framework</h3>
+                <p class="project-desc">
+                    An AI-driven traffic management system built for Indian urban conditions, combining reinforcement learning, predictive modeling, and real-time event detection.
+                </p>
+                <ul class="project-bullets">
+                    <li>Implemented Deep Q-Learning (DQN) with CityFlow simulator for adaptive traffic signal control</li>
+                    <li>Trained LSTM + LightGBM ensemble for congestion prediction using historical, weather, and event data</li>
+                    <li>Integrated YOLOv5 for real-time vehicle classification (cars, bikes, buses, emergency vehicles)</li>
+                    <li>Built BERT-based NLP module for real-time event/disaster detection via Twitter API alerts</li>
+                    <li>Deployed Streamlit dashboard with congestion heatmaps, signal states, and A*-based optimized routing</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>LSTM</span><span>LightGBM</span><span>YOLOv5</span><span>CityFlow</span><span>RL</span><span>Streamlit</span>
+                </div>
+                <a href="https://github.com/Mrinmayee-22/Traffic_flow_optimization" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-tag">Applied ML · Business</div>
+                <h3>Real Estate Price Prediction System</h3>
+                <p class="project-desc">
+                    A complete, production-style ML pipeline that predicts residential property prices with explainable, business-oriented outputs.
+                </p>
+                <ul class="project-bullets">
+                    <li>Engineered a robust preprocessing pipeline with KNN imputation for missing values and feature encoding</li>
+                    <li>Benchmarked multiple regression models (Linear, Ridge, Lasso, Random Forest, XGBoost) with cross-validation</li>
+                    <li>Applied Optuna/GridSearchCV for hyperparameter tuning, achieving strong RMSE on held-out test data</li>
+                    <li>Used SHAP values to explain feature importance and deliver interpretable price drivers</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>KNN Imputation</span><span>SHAP</span><span>Pandas</span>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-tag">AgriTech · AI</div>
+                <h3>AI-Based Crop Advisory System</h3>
+                <p class="project-desc">
+                    An intelligent advisory platform that provides personalized crop recommendations and agronomic guidance to farmers using ML models and IoT sensor data.
+                </p>
+                <ul class="project-bullets">
+                    <li>Built ML classification model (Random Forest + SVM) for crop recommendation based on soil NPK, pH, humidity, and rainfall</li>
+                    <li>Integrated IoT sensor simulation layer for real-time environmental data ingestion</li>
+                    <li>Developed a rule-based + ML chatbot for natural language advisory queries (pest control, irrigation, fertilizer)</li>
+                    <li>Mobile-friendly frontend prototype for field usability in low-connectivity environments</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>Scikit-learn</span><span>IoT</span><span>Chatbot</span><span>Flask</span><span>Mobile UI</span>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card">
+                <div class="project-tag">Systems Engineering · Java</div>
+                <h3>Live System Sentinel</h3>
+                <p class="project-desc">
+                    A real-time system monitoring platform built in Java that continuously tracks CPU, memory, disk I/O, and process health with alerting capabilities.
+                </p>
+                <ul class="project-bullets">
+                    <li>Architected using OOP principles with modular components for metric collection, alerting, and visualization</li>
+                    <li>Implemented multi-threaded polling engine with configurable sampling intervals and threshold-based alerts</li>
+                    <li>Built dynamic dashboard displaying live time-series charts for all monitored system resources</li>
+                    <li>Alert system triggers email/log notifications on anomalous CPU spikes or memory pressure</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Java</span><span>OOP</span><span>Multithreading</span><span>JavaFX/Swing</span><span>System Design</span>
+                </div>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card">
+                <div class="project-tag">Finance · Time Series</div>
+                <h3>Stock Price Prediction System</h3>
+                <p class="project-desc">
+                    A time series forecasting system that predicts stock closing prices using LSTM neural networks trained on historical market data.
+                </p>
+                <ul class="project-bullets">
+                    <li>Built LSTM model with sliding window approach to capture temporal dependencies in stock price sequences</li>
+                    <li>Preprocessed data with MinMax normalization and engineered technical indicators (MA, RSI, MACD)</li>
+                    <li>Evaluated with RMSE and MAE metrics; visualized prediction vs. actual curves for multiple tickers</li>
+                </ul>
+                <div class="project-stack">
+                    <span>Python</span><span>LSTM</span><span>TensorFlow</span><span>Pandas</span><span>Time Series</span>
+                </div>
+                <a href="https://github.com/Mrinmayee-22/Stock-Market-Predictor" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="section-label">03 / Skills</div>
+        <h2 class="section-heading">Technical Toolkit</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-group-label">Languages</div>
+                <div class="skill-items">
+                    <span>Python</span><span>Java</span><span>C/C++</span><span>R</span><span>SQL</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">AI / ML</div>
+                <div class="skill-items">
+                    <span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Scikit-learn</span><span>XGBoost</span><span>LightGBM</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Deep Learning</div>
+                <div class="skill-items">
+                    <span>CNN</span><span>LSTM</span><span>Transformers</span><span>BioBERT</span><span>YOLOv5</span><span>RL / DQN</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Data Engineering</div>
+                <div class="skill-items">
+                    <span>Pandas</span><span>NumPy</span><span>Plotly</span><span>Seaborn</span><span>Streamlit</span><span>SQL/DBMS</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Dev & Tools</div>
+                <div class="skill-items">
+                    <span>Flask</span><span>Git / GitHub</span><span>Jupyter</span><span>Google Colab</span><span>VS Code</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-label">Math & Theory</div>
+                <div class="skill-items">
+                    <span>Statistics</span><span>Linear Algebra</span><span>Probability</span><span>DSA</span><span>OOP</span><span>OS</span><span>DBMS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="section-label">04 / Contact</div>
+        <div class="contact-grid">
+            <div class="contact-left">
+                <h2 class="section-heading">Let's build<br><em>something great.</em></h2>
+                <p class="contact-desc">Open to AI/ML internships, research collaborations, and interesting projects.</p>
+                <div class="contact-links">
+                    <a href="mailto:mru.n.mai2206@gmail.com" class="contact-link">
+                        <span class="contact-icon">✉</span> mru.n.mai2206@gmail.com
+                    </a>
+                    <a href="https://github.com/Mrinmayee-22" target="_blank" class="contact-link">
+                        <span class="contact-icon">⌥</span> github.com/Mrinmayee-22
+                    </a>
+                    <a href="https://www.linkedin.com/in/mrinmayee-gokhale-1b03b72b2/" target="_blank" class="contact-link">
+                        <span class="contact-icon">in</span> LinkedIn Profile
+                    </a>
+                </div>
+                <a href="/resume" class="btn-primary resume-dl-btn">Download Resume ↓</a>
+            </div>
+            <div class="contact-right">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full-width" id="submit-btn">Send Message →</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+        <span class="footer-logo">MG<span class="dot">.</span></span>
+        <span class="footer-copy">© 2025 Mrinmayee Gokhale · Built with Flask &amp; intentional design</span>
+        <span class="footer-uni">MIT-WPU, Pune</span>
+    </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
